@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Carvalho | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <nav class="floating-nav">
+        <ul class="nav-links">
+            <li class="active" data-target="hero"><a href="#hero"><i class="bi bi-house-door"></i></a></li>
+            <li data-target="about"><a href="#about"><i class="bi bi-person-badge"></i></a></li>
+            <li data-target="projects"><a href="#projects"><i class="bi bi-rocket-takeoff"></i></a></li>
+            <li data-target="skills"><a href="#skills"><i class="bi bi-code-square"></i></a></li>
+            <li class="theme-li"><button id="theme-toggle"><i class="bi bi-moon-stars"></i></button></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero-wrap content-section active">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="display-1 fw-bold mb-0">David Carvalho<span class="dot">.</span></h1>
+                    <div class="badge-dev mt-2 mb-4">
+                        <span>&lt;</span> <b>Desenvolvedor Full-Stack</b> <span>/&gt;</span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="https://github.com/Davidcd1" target="_blank" class="btn-social btn-github"><i class="bi bi-github"></i> GitHub</a>
+                        <a href="#" target="_blank" class="btn-social btn-linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:davidcontatoone@gmail.com" class="btn-social btn-email">
+                            <i class="bi bi-envelope-fill"></i> E-mail
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 position-relative mt-5 mt-lg-0">
+                    <div class="cartoon-wrapper text-center">
+                        <img src="images/hero.png" alt="David" class="img-fluid cartoon-img">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h2 class="about-title">Sobre</h2>
+                        <div class="about-description">
+                            <p>
+                                Sou estudante de <span class="tech-highlight">Análise e Desenvolvimento de Sistemas</span> e desenvolvedor focado em soluções robustas. Embora transite pelo Front-end com <span class="tech-highlight">HTML</span>, <span class="tech-highlight">CSS</span> e <span class="tech-highlight">Bootstrap</span>, meu foco principal é a arquitetura de sistemas.
+                            </p>
+                            <p>
+                                Atualmente, desenvolvo APIs em <span class="tech-highlight">C#</span> utilizando <span class="tech-highlight">Dapper</span> e <span class="tech-highlight">PostgreSQL</span> (com foco em performance via functions). Também possuo experiência com <span class="tech-highlight">Windows Forms</span> para softwares desktop.
+                            </p>
+                            <p>
+                                Sou iniciante, mas busco a padronização rigorosa em cada projeto. No momento, estou expandindo meus conhecimentos iniciando no ecossistema <span class="tech-highlight">Rust</span>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                        <div class="about-visual-context">
+                            <img src="images/aboutme1.png" alt="Representação de Arquitetura de Sistemas" class="about-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="projects" class="py-5 content-section">
+        <div class="container">
+            <h2 class="section-title mb-5"><b>Projetos</b></h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="images/ministock.png"  alt="MiniStock" class="project-img">
+                            
+                            <div class="project-overlay">
+                                <a href="https://davidcd1.github.io/MiniStock/" target="_blank" class="btn btn-main btn-sm">Acessar</a>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3>MiniStock</h3>
+                            <p>Sistema de gerenciamento de estoque desenvolvido como projeto de estudo, com foco em evolução técnica e boas práticas. 
+                                Permite controle de produtos, registro de vendas e visualização do estoque em tempo real.</p>
+                            
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Dapper</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="images/simplesocial.png"  alt="SimpleSocial" class="project-img">
+                            
+                            <div class="project-overlay">
+                                <a href="https://davidcd1.github.io/SimpleSocial/" target="_blank" class="btn btn-main btn-sm">Acessar</a>
+                                <a href="https://github.com/Davidcd1/SimpleSocial" target="_blank" class="btn btn-main btn-sm">Código Fonte</a>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3>SimpleSocial</h3>
+                            <p>Simulador de rede social com sistema de login, registro e gerenciamento de posts em tempo real usando apenas HTML, CSS e JavaScript.</p>
+                            
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="skills" class="skills-section content-section">
+        <div class="container">
+            <h2 class="section-title mb-5"><i class="bi bi-stack"></i> <b>Tecnologias</b></h2>
+            <div class="skills-grid">
+                
+                <a href="https://learn.microsoft.com/dotnet/csharp/" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#">
+                    <span>C#</span>
+                </a>
+
+                <a href="https://dotnet.microsoft.com/" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" alt=".NET">
+                    <span>.NET</span>
+                </a>
+
+                <a href="https://www.rust-lang.org/" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" style="filter: brightness(0) invert(1);">
+                    <span>Rust</span>
+                </a>
+
+                <a href="https://www.postgresql.org/" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                    <span>PostgreSQL</span>
+                </a>
+
+                <a href="https://github.com/DapperLib/Dapper" target="_blank" class="skill-card">
+                    <i class="bi bi-lightning-fill" style="font-size: 50px; color: #f4702a; margin-bottom: 10px;"></i>
+                    <span>Dapper</span>
+                </a>
+
+                <a href="https://jwt.io/" target="_blank" class="skill-card">
+                    <img src="https://camo.githubusercontent.com/f92253dbf0cc0476ea8d43a7e071782096a833f7f0a7b5e76f0141739709ccfb/68747470733a2f2f6a77742e696f2f696d672f7069635f6c6f676f2e737667" alt="JWT" style="width: 50px; height: 50px;">
+                    <span>JWT Token</span>
+                </a>
+
+                <a href="https://learn.microsoft.com/dotnet/desktop/winforms/" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" alt="WinForms">
+                    <span>WinForms</span>
+                </a>
+
+                <a href="https://getbootstrap.com/" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                    <span>Bootstrap</span>
+                </a>
+
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </a>
+
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </a>
+
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JavaScript</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
